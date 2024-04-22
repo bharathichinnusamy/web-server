@@ -20,7 +20,6 @@ hbs.registerPartials(partialsPath)
 //set up direct static to serve
 app.use(express.static(directPath))
 
-
 app.get('', (req, res) => {
     res.render('index.hbs', { title: "Weather", name: "Bharathi" })
 
@@ -78,5 +77,5 @@ app.get('*', (req, res) => {
 })
 
 app.listen(3000, () => {
-    console.log("port is listening")
+    console.log("Port is listening")
 })
